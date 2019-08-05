@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" tools:ignore="MissingDefaultResource">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:orientation="vertical"
+                  android:layout_weight="0.10"
+    >
+
+        <TextView android:id="@+id/textView1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="100dp"
+                  android:layout_weight="0.5"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent" android:orientation="horizontal"
+                      android:layout_weight="0.5"
+        >
+
+            <TableLayout
+                    android:layout_width="225dp"
+                    android:layout_height="500dp">>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <Button android:onClick="onclick" android:id="@+id/bt_option" android:text="@id/bt_option" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:clickable="false" android:layout_column="0"
+                                android:layout_row="0"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_parentOuv" android:text="@id/bt_parentOuv" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="1"
+                                android:layout_row="0"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_parentFerm" android:text="@id/bt_parentFerm" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="2"
+                                android:layout_row="0"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_abs" android:text="@id/bt_abs" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="0"
+                                android:layout_row="1"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_rac" android:text="@id/bt_rac" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_row="1"
+                                android:layout_column="1"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_puiss" android:text="@id/bt_puiss" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="2"
+                                android:layout_row="1"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_sin" android:text="@id/bt_sin" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="0"
+                                android:layout_row="2"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_cos" android:text="@id/bt_cos" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="1"
+                                android:layout_row="2"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_tan" android:text="@id/bt_tan" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="2"
+                                android:layout_row="2"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_asin" android:text="@id/bt_asin" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="0"
+                                android:layout_row="3"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_acos" android:text="@id/bt_acos" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="1"
+                                android:layout_row="3"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_atan" android:text="@id/bt_atan" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="2"
+                                android:layout_row="3"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_ln" android:text="@id/bt_ln" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="0"
+                                android:layout_row="4"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_log" android:text="@id/bt_log" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="1"
+                                android:layout_row="4"/>
+                        <Button android:onClick="onclick" android:id="@+id/bt_norm" android:text="@id/bt_norm" style="@style/bouton_calculatrice_chiffre_scientifique"
+                                android:layout_column="2"
+                                android:layout_row="4"/>
+
+                    </GridLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <Button android:onClick="onclick" android:id="@+id/bt_backspace"
+                                android:text="@id/bt_backspace" style="@style/bouton_calculatrice_chiffre_port"
+                                android:layout_width="100dp"
+                        />
+
+                        <Button android:onClick="onclick"
+
+                                android:id="@+id/bt_ac" android:text="@id/bt_ac" style="@style/bouton_calculatrice_chiffre_port"
+                                android:layout_width="200dp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <Button
+                                style="@style/bouton_calculatrice_chiffre_land"
+                                android:text="@id/bt_un"
+                                android:id="@+id/bt_un"
+                                android:onClick="onclick"
+                                android:layout_row="0"
+                                android:layout_column="0"/>
+
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_deux"
+                                android:id="@+id/btn_2"
+                                android:layout_row="0"
+                                android:layout_column="1"
+                                style="@style/bouton_calculatrice_chiffre_land" />
+                        <Button android:onClick="onclick"
+                                style="@style/bouton_calculatrice_chiffre_land"
+                                android:text="@id/bt_trois"
+                                android:id="@+id/bt_trois"
+                                android:layout_row="0"
+                                android:layout_column="2"/>
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_quatre"
+                                android:id="@+id/bt_quatre"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                style="@style/bouton_calculatrice_chiffre_land" />
+
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_cinq"
+                                android:id="@+id/bt_cinq"
+                                android:layout_column="1"
+                                android:layout_row="1"
+                                style="@style/bouton_calculatrice_chiffre_land" />
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_six"
+                                android:id="@+id/bt_six"
+                                style="@style/bouton_calculatrice_chiffre_land"
+                                android:layout_column="2"
+                                android:layout_row="1"/>
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_sept"
+                                android:id="@+id/bt_sept"
+                                android:layout_column="0"
+                                android:layout_row="2"
+                                style="@style/bouton_calculatrice_chiffre_land" />
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_huit"
+                                android:id="@+id/bt_huit"
+                                android:layout_column="1"
+                                android:layout_row="2"
+                                style="@style/bouton_calculatrice_chiffre_land" />
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_neuf"
+                                android:id="@+id/bt_neuf"
+                                style="@style/bouton_calculatrice_chiffre_land"
+                                android:layout_row="2"
+                                android:layout_column="2"/>
+
+                    </GridLayout>
+
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <Button android:onClick="onclick"
+
+                                android:id="@+id/bt_zero" android:text="@id/bt_zero" style="@style/bouton_calculatrice_chiffre_port"
+                                android:layout_width="200dp" />
+
+                        <Button android:onClick="onclick"
+
+                                android:text="@id/bt_point"
+                                android:id="@+id/bt_point"
+                                style="@style/bouton_calculatrice_chiffre_land"/>
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                >
+
+                    <Button android:onClick="onclick"
+                            style="@style/symbole"
+
+                            android:text="@id/bt_div"
+                            android:id="@+id/bt_div" />
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                >
+
+                    <Button android:onClick="onclick"
+                            style="@style/symbole"
+                            android:layout_width="110dp"
+                            android:text="@id/bt_fois"
+                            android:id="@+id/bt_fois"
+                    />
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <Button android:onClick="onclick"
+                            style="@style/symbole"
+                            android:layout_width="110dp"
+                            android:text="@id/bt_moins"
+                            android:id="@+id/bt_moins" />
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <Button android:onClick="onclick"
+                            style="@style/symbole"
+                            android:layout_width="110dp"
+                            android:text="@id/bt_plus"
+                            android:id="@+id/bt_plus" />
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <Button android:onClick="onclick"
+                            style="@style/symbole"
+                            android:layout_width="110dp"
+                            android:text="@id/bt_egale"
+                            android:id="@+id/bt_egale"
+                    />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
